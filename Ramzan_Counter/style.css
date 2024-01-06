@@ -1,0 +1,19 @@
+body{
+    background-color: grey;
+}
+h1{
+    color: greenyellow;
+    font-family: 'Elephant';
+    text-align: center;
+}
+.bt{
+    text-align: center;
+}
+#btns{
+    border-color: greenyellow;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 70px;
+}
