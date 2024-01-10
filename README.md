@@ -1,2 +1,3 @@
-#ramzancounter & password generator
-https://frolicking-crepe-b1a439.netlify.app/
+#ramzancounter&password generator
+
+https://shariq-js-assignments.netlify.app/
