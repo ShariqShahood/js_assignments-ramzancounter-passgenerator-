@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Calculator</h1>
+    <center>
+        <table class="cal">
+            <tr>
+                <td><i class="fa-solid fa-list"></i><b> &nbsp;Standard</b><br><br><br></td>
+            <tr>
+                <td></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><input id="result" type="text" name=""><br><br><br></td>
+            </tr>
+            <tr id="btn">
+                <td>MC</td>
+                <td>MR</td>
+                <td><b>M+</b></td>
+                <td><b>M-</b></td>
+                <td><b>MS</b></td>
+                <td>Mv</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr id="btn">
+                <td><input class="btns" type="button" value="%" onclick="percent()"></td>
+                <td><input class="btns" type="button" value="CE" onclick="clearScreen()"></td>
+                <td><input class="btns" type="button" value="C" onclick="clearScreen()"></td>
+                <td><input class="btns" type="button" value="x" onclick="deletes()"></td>
+            </tr>
+            <tr id="btn">
+                <td><input class="btns" type="button" value="1/x" onclick="divisor()"></td>
+                <td><input class="btns" type="button" value="x²" onclick="squares()"></td>
+                <td><input class="btns" type="button" value="²√x" onclick="roots()"></td>
+                <td><input class="btns" type="button" value="÷" onclick="display('/')"></td>
+            </tr>
+            <tr id="btn">
+                <td><input class="btns" type="button" value="7" onclick="display('7')"></td>
+                <td><input class="btns" type="button" value="8" onclick="display('8')"></td>
+                <td><input class="btns" type="button" value="9" onclick="display('9')"></td>
+                <td><input class="btns" type="button" value="*" onclick="display('*')"></td>
+            </tr>
+            <tr id="btn">
+                <td><input class="btns" type="button" value="4" onclick="display('4')"></td>
+                <td><input class="btns" type="button" value="5" onclick="display('5')"></td>
+                <td><input class="btns" type="button" value="6" onclick="display('6')"></td>
+                <td><input class="btns" type="button" value="-" onclick="display('-')"></td>
+            </tr>
+            <tr id="btn">
+                <td><input class="btns" type="button" value="3" onclick="display('3')"></td>
+                <td><input class="btns" type="button" value="2" onclick="display('2')"></td>
+                <td><input class="btns" type="button" value="1" onclick="display('1')"></td>
+                <td><input class="btns" type="button" value="+" onclick="display('+')"></td>
+            </tr>
+            <tr id="btn">
+                <td><input class="btns" type="button" value="+/-" onclick="addsub()"></td>
+                <td><input class="btns" type="button" value="0" onclick="display('0')"></td>
+                <td><input class="btns" type="button" value="." onclick="display('.')"></td>
+                <td><input id="special" class="btns" type="button" value="=" style="background-color: #3498DB;"
+                        onclick="calculate()"></td>
+            </tr>
+        </table>
+    </center>
+    <script>
+        function clearScreen() {
+            document.getElementById("result").value = "";
+        }
+        function deletes() {
+            var inputField = document.getElementById('result');
+            var currentValue = inputField.value;
+            if (currentValue.length > 0) {
+                var newValue = currentValue.slice(0, currentValue.length - 1);
+                inputField.value = newValue;
+            }
+        }
+        function divisor() {
+            var inputField = document.getElementById('result');
+            var currentValue = inputField.value;
+            if (currentValue.length > 0) {
+                var newValue = 1 / currentValue;
+                inputField.value = newValue;
+            }
+        }
+        function squares() {
+            var inputField = document.getElementById('result');
+            var currentValue = inputField.value;
+            if (currentValue.length > 0) {
+                var newValue = currentValue * currentValue;
+                inputField.value = newValue;
+            }
+        }
+        function roots() {
+            var inputField = document.getElementById('result');
+            var currentValue = inputField.value;
+            if (currentValue.length > 0) {
+                var newValue = Math.sqrt(currentValue);
+                inputField.value = newValue;
+            }
+        }
+
+        function display(value) {
+            document.getElementById("result").value += value;
+        }
+        function calculate() {
+            var p = document.getElementById("result").value;
+            var q = eval(p);
+            document.getElementById("result").value = q;
+        }
+        function percent() {
+            var a = document.getElementById("result").value;
+            var b = eval(a);
+            document.getElementById("result").value = (b * 100 + "%");
+        }
+        function addsub() {
+            var inputField = document.getElementById('result');
+            var currentValue = inputField.value;
+            if (currentValue.length > 0) {
+                var newValue = currentValue.startsWith('-') ? currentValue.slice(1) : '-' + currentValue;
+                inputField.value = newValue;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
