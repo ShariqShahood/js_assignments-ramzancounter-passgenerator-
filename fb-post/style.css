@@ -1,0 +1,193 @@
+.post {
+    border: 5px dotted rgb(26, 146, 221);
+    border-radius: 10px;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+#emojie {
+    border: 2px dotted rgb(26, 146, 221);
+    border-radius: 10px;
+}
+
+#post-text {
+    height: 200px;
+    width: 488px;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+}
+
+.font {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+#post-background {
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.emoji {
+    color: rgb(189, 186, 186);
+    font-size: 25px;
+}
+
+#head2 {
+    display: none;
+}
+
+.cross {
+    color: rgb(154, 151, 151);
+    cursor: pointer;
+}
+
+.cross:hover {
+    color: red;
+}
+
+#cros {
+    font-size: larger;
+    padding-right: 10px;
+    float: right;
+}
+
+#tables {
+    float: left;
+}
+
+.tab {
+    font-size: 13px;
+}
+
+h1 {
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pub {
+    font-size: 11px;
+    width: 73%;
+    padding: 3px;
+    background-color: rgb(190, 187, 187);
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.features {
+    word-spacing: 15px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: rgb(178, 176, 176);
+
+}
+
+/* #under{
+    float: right;
+} */
+#pos {
+    word-spacing: 0px;
+    float: left;
+}
+
+.a {
+    font-size: 25px;
+    color: rgb(7, 126, 200);
+}
+
+.b {
+    font-size: 25px;
+    color: yellow;
+}
+
+.c {
+    font-size: 25px;
+    color: rgb(213, 76, 76);
+}
+
+#post-btn {
+    padding: 7px;
+    color: white;
+    font-weight: bolder;
+    border-color: transparent;
+    border-radius: 5px;
+    width: 95%;
+    background-color: rgb(26, 146, 221);
+}
+
+.reactions {
+    color: grey;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+#rc,
+#rc2,
+#rc3 {
+    display: none;
+}
+
+#comments {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+#comm {
+    padding: 7px;
+    background-color: rgb(218, 214, 214) !important;
+    /* height: 100%!important; */
+    width: 228.5% !important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    border: transparent;
+}
+
+#logos {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 4px;
+    width: 42%;
+    background-color: rgb(218, 214, 214);
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+#liking {
+    display: none;
+}
+
+.plane {
+    display: flex;
+    justify-content: end;
+}
+
+.em {
+    background-color: transparent;
+    color: grey;
+}
+
+#comment-section {
+    display: none;
+}
