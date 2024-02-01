@@ -1,3 +1,2 @@
 #ramzancounter&password generator & calculator
-
-https://shariq-js-assignments.netlify.app/
+https://shariq-fb.netlify.app/
