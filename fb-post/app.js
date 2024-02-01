@@ -70,10 +70,14 @@ function enterComment() {
 function share() {
     document.write("<h1>" + "Share Succesfully.." + "</h1>");
 }
-// function like(){
-//     var lik = document.getElementById('liking');
-//     event.target.style.display='contents';
-// }
+function like(){
+    var lik = document.getElementById('liking');
+    event.target.style.color='red';
+}
+function dislike(){
+    var likee = document.getElementById('liking');
+    event.target.style.color='grey';
+}
 function createPost() {
     var item = document.getElementById('item');
     var head = document.getElementById('head');

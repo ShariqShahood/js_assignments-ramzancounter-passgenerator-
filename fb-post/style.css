@@ -145,7 +145,28 @@ h1 {
 #rc3 {
     display: none;
 }
-
+#rea{
+    border-color: transparent;
+    color: grey;
+}
+#rc:hover{
+    cursor: pointer;
+    color: red;
+    font-size: larger;
+    transition: 0.5s;
+}
+#rc2:hover{
+    cursor: pointer;
+    color: rgb(9, 161, 226);
+    font-size: larger;
+    transition: 0.5s;
+}
+#rc3:hover{
+    cursor: pointer;
+    color: rgb(10, 223, 31);
+    font-size: larger;
+    transition: 0.5s;
+}
 #comments {
     width: 50%;
     display: flex;
@@ -175,8 +196,9 @@ h1 {
 }
 
 #liking {
-    display: none;
+    display: contents;
 }
+
 
 .plane {
     display: flex;
